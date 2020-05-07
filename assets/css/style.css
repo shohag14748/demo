@@ -1644,7 +1644,7 @@ footer .contents .links li a:hover {
 
     .banner .bg-left {
         width: 18%;
-        top: 105%;
+        top: 50%;
         transform: translateY(-0%);
     }
 
@@ -1938,6 +1938,11 @@ footer .contents .links li a:hover {
 @media only screen and (max-width: 500px) {
     header .container {
         padding: 0 15px;
+    }
+    .banner .bg-left {
+        width: 18%;
+        top: 55%;
+        transform: translateY(-0%);
     }
     .application .content {
         width: 100%;
