@@ -7,6 +7,7 @@
     <title>ApplyPro</title>
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<!--    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -161,6 +162,8 @@
                     </div>
                 </div>
                 <div class="col2">
+<!--
+                   
                     <div class="swiper-container proffessional-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -190,12 +193,42 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Add Arrows -->
+                         Add Arrows 
                         <div class="swiper-button-next">
                             <i class="iconfont icon-right-arrow">&#xe808;</i>
                         </div>
                         <div class="swiper-button-prev">
                             <i class="iconfont icon-left-arrow">&#xe807;</i>
+                        </div>
+                    </div>
+                    
+-->
+                    <div class="owl-carousel owl-theme proffessional-slider">
+                        <div class="item">
+                            <div class="slide-wrap">
+                                <div class="image">
+                                    <img src="assets/images/slider-image.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>London</h4>
+                                        <a href="" class="button blue">Diese nutzen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-wrap">
+                                <div class="image">
+                                    <img src="assets/images/slider-image-2.jpg" alt="">
+                                </div>
+                                <div class="overlay">
+                                    <div class="content">
+                                        <h4>London</h4>
+                                        <a href="" class="button blue">Diese nutzen</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -332,7 +365,7 @@
             </div>
             
 -->
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme testimonial-slider">
                 <div class="item">
                     <div class="slide-wrap">
                         <div class="col1">
@@ -508,20 +541,20 @@
     </div>
 
    <style>
-       .owl-nav{
+       .testimonial-slider .owl-nav{
            position: absolute;
            right: 0;
            bottom: 20px
        }
-       .owl-nav i{
+       .testimonial-slider .owl-nav i{
            font-size: 25px;
            color: #e1e1e1;
            transition: .3s;
        }
-       .owl-nav i:hover{
+       .testimonial-slider .owl-nav i:hover{
             color: #334fe0;
        }
-       .owl-nav .owl-prev{
+       .testimonial-slider .owl-nav .owl-prev{
            margin-right: 10px;
        }
     
@@ -543,7 +576,7 @@
 
         $(document).ready(function() {
 
-            $('.owl-carousel').owlCarousel({
+            $('.proffessional-slider , .testimonial-slider').owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
