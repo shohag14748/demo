@@ -1812,6 +1812,9 @@ footer .contents .links li a:hover {
         padding-bottom: 30px;
         padding-left: 0;
     }
+    .testimonial .slide-wrap p {
+        font-size: 14px;
+    }
 
     .testimonial .slide-wrap {
         padding: 0 30px;
