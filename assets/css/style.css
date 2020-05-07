@@ -50,11 +50,6 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/*
-body{
-    background: #999
-}
-*/
 .container {
     max-width: 1200px;
     margin: auto;
@@ -99,6 +94,9 @@ header .navbar .menu ul li a {
 header .navbar .menu ul li.active a,
 header .navbar .menu ul li a:hover {
     color: #334fe0;
+}
+header .navbar .menu-icon{
+    display: none;
 }
 
 .button {
@@ -154,7 +152,10 @@ h6 {
 }
 
 
-
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 
 
@@ -162,7 +163,6 @@ h6 {
 
 
 .banner {
-    /*    min-height: 100vh;*/
     overflow-x: hidden;
 }
 
@@ -179,7 +179,7 @@ h6 {
 }
 
 
-.bg-right-image {
+.banner .bg-right-image {
     position: absolute;
     width: 42%;
     right: 0;
@@ -188,7 +188,7 @@ h6 {
 }
 
 
-.bg-dots {
+.banner .bg-dots {
     position: absolute;
     width: 89%;
     margin: auto;
@@ -197,7 +197,7 @@ h6 {
     z-index: -1;
     transform: translate(-47%);
 }
-.bg-left{
+.banner .bg-left {
     position: absolute;
     width: 20.1%;
     top: 90%;
@@ -224,8 +224,6 @@ h6 {
 }
 
 .application .title {
-    text-align: center;
-    line-height: 60px;
     margin-bottom: 60px;
 }
 
@@ -246,7 +244,7 @@ h6 {
     box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
     border-radius: 4px;
     transition: .4s;
-/*    background: #fff;*/
+    background: #fff;
 }
 
 .application .content .content-wrap h6 {
@@ -324,6 +322,9 @@ h6 {
 .impression .container {
     max-width: 1550px;
 }
+.impression .title {
+    text-align: left;
+}
 
 .impression .content-wrap {
     display: flex;
@@ -339,9 +340,6 @@ h6 {
     width: 38%;
 }
 
-.impression .content-wrap .col2 h2 {
-    line-height: 60px;
-}
 
 .impression .content-wrap .col2 p {
     font-size: 24px;
@@ -406,9 +404,6 @@ h6 {
     padding-left: 15px;
 }
 
-.proffessional .col1 h2 {
-    line-height: 60px
-}
 
 .proffessional .col1 p {
     font-size: 20px;
@@ -504,11 +499,6 @@ h6 {
     padding: 120px 0;
 }
 
-.pricing .title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 .pricing .packages {
     display: flex;
     margin-left: -15px;
@@ -536,7 +526,6 @@ h6 {
 .pricing .single-package .content h1 {
     font-weight: 300;
     color: #9364d4;
-    font-size: 60px;
     line-height: 40px;
 }
 
@@ -700,10 +689,6 @@ h6 {
     padding: 120px 0;
 }
 
-.blog .title {
-    text-align: center;
-    margin-bottom: 50px;
-}
 
 .blog .posts {
     display: flex;
@@ -915,8 +900,6 @@ footer .contents .links li a:hover{
 }
 
 
-
-
 .to-top{
     width: 40px;
     height: 40px;
@@ -928,6 +911,7 @@ footer .contents .links li a:hover{
     overflow: hidden;
     transition: .3s;
     display: none;
+    z-index: 999999;
 }
 .to-top svg{
     width: 30px;
@@ -944,59 +928,6 @@ footer .contents .links li a:hover{
 .to-top:hover{
     background: #ee539b;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

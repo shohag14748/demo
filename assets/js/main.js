@@ -16,6 +16,10 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000);
     });
+    $('.menu-icon').click(function(){
+        $(this).toggleClass('active');
+        $('.menu').toggleClass('active');
+    });
 
 //    var scrollLink = $('.smooth');
 //    scrollLink.on("click", function (e) {
