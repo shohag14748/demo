@@ -1762,6 +1762,7 @@ footer .contents .links li a:hover {
     .proffessional .col1,
     .proffessional .col2 {
         width: 100%;
+        padding: 0;
     }
 
     .proffessional .col1 {
@@ -1825,6 +1826,7 @@ footer .contents .links li a:hover {
 
     .testimonial .slide-wrap .col1 {
         width: 100%;
+        padding-right: 0;
     }
 
     .testimonial .slide-wrap .col2 {
