@@ -412,6 +412,7 @@ header .navbar .menu-icon {
     display: block;
     padding: 0 20px;
 }
+
 .proffessional .col2 .proffessional-slider .slide-wrap {
     max-width: 400px;
     margin: auto;
@@ -435,9 +436,10 @@ header .navbar .menu-icon {
     width: 100%;
 }
 
-.proffessional-slider{
+.proffessional-slider {
     position: relative;
 }
+
 .proffessional-slider .owl-nav i {
     font-size: 20px;
     color: #e1e1e1;
@@ -466,6 +468,7 @@ header .navbar .menu-icon {
     right: 0;
     left: auto;
 }
+
 .proffessional-slider .owl-nav .owl-prev:hover,
 .proffessional-slider .owl-nav .owl-next:hover {
     background: #334fe0 !important;
@@ -623,26 +626,25 @@ header .navbar .menu-icon {
     color: #fff;
 }
 
-.testimonial .swiper-button-next,
-.testimonial .swiper-button-prev {
-    color: #e1e1e1;
-    transition: .3s;
-    font-size: 25px;
-    line-height: 30px;
-    bottom: 0;
-    top: auto;
-    margin-top: 0;
 
+.testimonial-slider .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 20px
 }
 
-.testimonial .swiper-button-next:hover,
-.testimonial .swiper-button-prev:hover {
+.testimonial-slider .owl-nav i {
+    font-size: 25px;
+    color: #e1e1e1;
+    transition: .3s;
+}
+
+.testimonial-slider .owl-nav i:hover {
     color: #334fe0;
 }
 
-.testimonial .swiper-button-prev {
-    right: 45px;
-    left: auto;
+.testimonial-slider .owl-nav .owl-prev {
+    margin-right: 10px;
 }
 
 /*========== blog ==========*/
@@ -1071,7 +1073,7 @@ footer .contents .links li a:hover {
         margin: 25px 0;
     }
 
-    .proffessional .col2 .proffessional-slider  .slide-wrap {
+    .proffessional .col2 .proffessional-slider .slide-wrap {
         max-width: 300px;
     }
 
@@ -1080,7 +1082,8 @@ footer .contents .links li a:hover {
         width: 40px;
         height: 40px;
     }
-    .proffessional-slider .owl-nav i{
+
+    .proffessional-slider .owl-nav i {
         font-size: 18px;
         line-height: 42px;
     }
@@ -1348,7 +1351,7 @@ footer .contents .links li a:hover {
         width: 180px;
     }
 
-    .proffessional .col2 .proffessional-slider  .overlay h4 {
+    .proffessional .col2 .proffessional-slider .overlay h4 {
         font-size: 20px;
     }
 
