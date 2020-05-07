@@ -96,7 +96,7 @@ header .navbar .menu ul li a:hover {
     color: #334fe0;
 }
 header .navbar .menu-icon{
-    display: none !important;
+    display: none;
 }
 
 .button {
