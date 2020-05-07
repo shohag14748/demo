@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ApplyPro</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
+   <!-- ---------- header start ---------- -->
     <header>
         <div class="container">
             <div class="navbar">
@@ -32,7 +32,9 @@
             </div>
         </div>
     </header>
-
+    <!-- ---------- header end ---------- -->
+    
+    <!-- ---------- banner start ---------- -->
     <section class="banner">
         <div class="bg">
             <div class="bg-right-image">
@@ -58,8 +60,9 @@
             </div>
         </div>
     </section>
-
-
+    <!-- ---------- banner end ---------- -->
+    
+    <!-- ---------- application start ---------- -->
     <section class="application">
         <div class="container">
             <div class="title">
@@ -117,8 +120,9 @@
             </div>
         </div>
     </section>
-
-
+    <!-- ---------- application end ---------- -->
+    
+    <!-- ---------- impression start ---------- -->
     <section class="impression">
         <div class="container">
             <div class="content-wrap">
@@ -141,7 +145,9 @@
             </div>
         </div>
     </section>
-
+    <!-- ---------- impression end ---------- -->
+    
+    <!-- ---------- proffessional start ---------- -->
     <section class="proffessional">
         <div class="container">
             <div class="content-wrap">
@@ -153,8 +159,21 @@
                     </div>
                 </div>
                 <div class="col2">
-                    <div class="swiper-container">
+                    <div class="swiper-container proffessional-slider">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-wrap">
+                                    <div class="image">
+                                        <img src="assets/images/slider-image.jpg" alt="">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <h4>London</h4>
+                                            <a href="" class="button blue">Diese nutzen</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide">
                                 <div class="slide-wrap">
                                     <div class="image">
@@ -181,7 +200,9 @@
             </div>
         </div>
     </section>
-
+    <!-- ---------- proffessional end ---------- -->
+    
+    <!-- ---------- pricing start ---------- -->
     <section class="pricing">
         <div class="container">
             <div class="title">
@@ -192,7 +213,7 @@
                     <div class="content">
                        <div class="head">
                         <h1>CHF 39.95</h1>
-                        <h6>EINMALIG</h6>
+                        <h6>Einmalig</h6>
                        </div>
                         <ul>
                             <li>Ein professionelles Design</li>
@@ -223,7 +244,7 @@
                     <div class="content yellow">
                        <div class="head">
                         <h1>CHF 159.95</h1>
-                        <h6>EINMALIG</h6>
+                        <h6>Einmalig</h6>
                        </div>
                         <ul>
                             <li>Persönliche Beratung</li>
@@ -238,11 +259,30 @@
             </div>
         </div>
     </section>
-
-    <div class="testimonial">
+    <!-- ---------- pricing end ---------- -->
+    
+    <!-- ---------- testimonial start ---------- -->
+    <section class="testimonial">
         <div class="container">
-            <div class="swiper-container">
+            <div class="swiper-container testimonial-slider">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <div class="col1">
+                                <div class="image">
+                                    <img src="assets/svg/usermask.svg" alt="">
+                                    <div class="quote">“</div>
+                                </div>
+                            </div>
+                            <div class="col2">
+                                <div class="content">
+                                    <h2>Was unsere Kunden sagen</h2>
+                                    <p>Diese Firma ist so extrem Toll! Meine Bewerbung ist super schön und hat meinen Wunsch-Arbeitgeber direkt angesprochen. Dank der Hilfe dieser Seite habe ich endlich einen tollen Arbeitsplatz.</p>
+                                    <h6>Markus L.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="swiper-slide">
                         <div class="slide-wrap">
                             <div class="col1">
@@ -270,9 +310,10 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
+    </section>
+    <!-- ---------- testimonial end ---------- -->
+    
+    <!-- ---------- blog start ---------- -->
     <section class="blog">
         <div class="container">
             <div class="title">
@@ -315,7 +356,9 @@
             </div>
         </div>
     </section>
-
+    <!-- ---------- blog end ---------- -->
+    
+    <!-- ---------- newsletter start ---------- -->
     <section class="newsletter">
         <div class="container">
             <div class="contents">
@@ -332,7 +375,9 @@
             </div>
         </div>
     </section>
-
+    <!-- ---------- newsletter end ---------- -->
+    
+    <!-- ---------- footer start ---------- -->
     <footer>
         <div class="container">
             <div class="contents">
@@ -385,10 +430,10 @@
     </div>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.proffessional-slider , .testimonial-slider ', {
             slidesPerView: 1,
             spaceBetween: 100,
             loop: true,

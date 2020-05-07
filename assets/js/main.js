@@ -17,16 +17,17 @@ $(document).ready(function () {
         }, 1000);
     });
     $('.menu-icon').click(function(){
+        if($('.menu').hasClass('active')){
+            $('.menu').addClass('close');
+            setTimeout(function(){ $('.menu').removeClass('close'); }, 500);
+        }
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
     });
 
-//    var scrollLink = $('.smooth');
-//    scrollLink.on("click", function (e) {
-//        e.preventDefault();
-//        $('body,html').animate({
-//            scrollTop: $(this.hash).offset().top
-//        }, 1000);
-//    });
+    $(window).resize(function(){
+        $('.menu').removeClass('active');
+        $('.menu-icon').removeClass('active');
+    });
 
 });
