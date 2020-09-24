@@ -27,11 +27,9 @@ $(document).ready(function () {
                         $(this).siblings('.collapse-area').show();
                     }
                 });
+                $('.extra-for-3-4').addClass('active');
             }else{
                 $('.form .step').removeClass('show3');
-            }
-            if($('.form .step.active').index() == 2){
-                $('.extra-for-3-4').addClass('active');
             }
             if($('.form .step.active').index() == 4){
                 $('.extra-for-3-4').removeClass('active');
@@ -51,10 +49,10 @@ $(document).ready(function () {
                 $('.form .step.active').removeClass('show3');
             }
             if($('.form .step.active').index() == 1){
-                $('.extra-for-3-4.active').removeClass('active');
             }
             else if($('.form .step.active').index() == 2){
                 $('.form .step.active').prev().removeClass('show3');
+                $('.extra-for-3-4.active').removeClass('active');
             }
             else if($('.form .step.active').index() == 3){
                 $('.form .step.active').prev().addClass('show3');

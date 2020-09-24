@@ -8,12 +8,23 @@ body{
 .mutistep-form .form {
     width: 55%;
     min-height: 100vh;
-    padding-top: 50px;
-    padding-bottom: 100px;
     position: relative;
-    background: #fff;
+    background: #fff;   
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
+.mutistep-form .form::-webkit-scrollbar {
+    display: none;
+}
+
+
+.mutistep-form .form .bg{
+    display: none;
+}
 .mutistep-form .form .bg img{
     width: 100%;
 }
@@ -23,6 +34,8 @@ body{
     left: 0;
     width: 15%;
     z-index: 1;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .mutistep-form .form .bg-dots {
@@ -30,6 +43,8 @@ body{
     width: 120%;
     top: 0;
     right: 0;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .mutistep-form .preview {
@@ -119,11 +134,14 @@ body{
 
 .form .wrap {
     width: 92%;
-    display: block;
     margin: auto;
     position: relative;
     height: 100%;
     max-width: 660px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .form .step-track {
@@ -159,11 +177,11 @@ body{
 
 .form .buttons {
     display: flex;
-    position: absolute;
-    bottom: -50px;
+    bottom: 50px;
     justify-content: space-between;
     width: 100%;
-
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .form .buttons .btn {
@@ -202,6 +220,7 @@ body{
     opacity: 0;
     top: 0;
     transition: .3s;
+    display: none;
 }
 
 .form .step4,
@@ -215,6 +234,7 @@ body{
     z-index: 99;
     opacity: 1;
     position: relative;
+    display: block;
 }
 
 .form .step.show3 {
@@ -697,6 +717,78 @@ body{
 .form .smalloptions .input-wrap label:hover i{
     color: #fff;
 }
+
+
+
+
+.form .files{
+    display: flex;
+    padding:0 -10px;
+    position: relative;
+}
+.form .files .file{
+    padding: 10px;
+    width: 25%;
+}
+.form .files .file .wrap{
+    padding: 15px 5px;
+    min-height: 110px;
+    border-radius: 10px;
+    display: block;
+    background: #fff;
+    box-shadow: 0px 10px 60px 0px rgba(46, 61, 98, 0.1);
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+.form .files .file .trashAndMove{
+    position: absolute;
+    width: 30px;
+    left: 100%;
+    top: calc(50% - 35px);
+    padding-left: 8px;
+    z-index: 999;
+    display: none;
+}
+.form .files .file .trashAndMove a{
+    margin: 4px 0;
+}
+
+.form .files .file .wrap>i{
+    font-size: 25px !important;
+}
+.form .files .file .wrap p{
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: #2e3d62;
+}
+.form .files .file .text-pink{
+    color: rgb(238, 83, 155)
+}
+.form .files .file .text-sky{
+    color: #5dd8d3;
+}
+.form .files .file .text-purple{
+    color: #9364d4;
+}
+.form .files .file .text-yellow{
+    color: #fddd6e;
+}
+.form .files .file .wrap:hover {
+    background: #334fe0;
+}
+.form .files .file .wrap:hover p,
+.form .files .file .wrap:hover i{
+    color: #fff;
+}
+.form .files .file .wrap:hover .trashAndMove{
+    display: block;
+}
+
 .form .step6 p{
     font-size: 12px;
     color: #666e82;
@@ -720,6 +812,8 @@ body{
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
+
+
 
 
 .extra-for-3-4 {
@@ -817,7 +911,31 @@ body{
     display: none;
 }
 
+@media (max-width:1500px){
+    .collapse-item .trashAndMove {
+        left: auto;
+        right: 0;
+        top: -25px;
+    }
+}
+@media (max-width:991px){
+    .mutistep-form .preview {
+        display: none;
+        width: 0;
+    }
+    .mutistep-form .form  {
+        width: 100%;
+    }
+}
 @media (max-width:768px){
+    .collapse-items .row.twocolumn {
+        flex-direction: column-reverse
+    }
+    .collapse-items .row.twocolumn>.col-6{
+        width: 100%;
+    }
+}
+@media (max-width:576px){
     .form .buttons .btn{
         width: 45px;
         height: 45px;
@@ -847,7 +965,7 @@ body{
     }
     .form .buttons .prev-step{
         position: absolute;
-        right: 60px;
+        right: 90px;
     }
     .form .buttons ul{
         position: absolute;
@@ -892,6 +1010,63 @@ body{
     .form .buttons ul a:hover{
         background: #f4f5f9;
         color: #334fe0;
+    }
+    
+    
+    .form .wrap .title h2{
+        font-size: 26px;
+    }
+    .form .wrap{
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .form .options .input-wrap {
+        width: 100%;
+    }
+    .form .options .input-wrap label{
+        min-height: 140px;
+        padding: 20px;
+    }
+    .form .col-3{
+        width: 50%;
+    }
+    
+    .form .smalloptions .input-wrap{
+        width: 33.33%;
+        text-align: center;
+        padding: 8px;
+    }
+    .form .smalloptions .input-wrap label{
+        min-height: 100px;
+    }
+    .form .files {
+        flex-flow: wrap;
+    }
+    .form .files .file{
+        width: 33.33%;
+    }
+    .form .files .file .wrap{
+        min-height: 100px
+    }
+    .extra-for-3-4.active{
+        display: none;
+    }
+    .form .steps .personal-details .col-6 {
+        width: 50%;
+        padding: 0 10px;
+    }
+    .form .steps .personal-details .collapse-button{
+        padding: 0;
+    }
+    
+    
+}
+
+@media (max-width:420px){
+    .form .smalloptions .input-wrap,
+    .form .files .file{
+        width: 50%;
     }
 }
 

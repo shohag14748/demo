@@ -27,143 +27,465 @@
                 </div>
             </div>
             <div class="wrap">
-                <div class="step-track">
-                    <span class="step-bar"><span></span></span>
-                    <p>Schritt <span class="stepnumber">1</span> von 6</p>
-                </div>
-                <div class="headingsteps">
-                    <div class="heading active">
-                        <div class="title">
-                            <h2>1. Was brauchst du?</h2>
+                <div class="top">
+                    <div class="step-track">
+                        <span class="step-bar"><span></span></span>
+                        <p>Schritt <span class="stepnumber">1</span> von 6</p>
+                    </div>
+                    <div class="headingsteps">
+                        <div class="heading active">
+                            <div class="title">
+                                <h2>1. Was brauchst du?</h2>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="title">
+                                <h2>2. Welches ist dein Gebiet?</h2>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="title">
+                                <h2>3. Erzähl uns wer du bist</h2>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="title">
+                                <h2>4. Erzähl uns von deinem Lebenslauf</h2>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="title">
+                                <h2>5. Füge deine Dokumente hinzu</h2>
+                            </div>
+                        </div>
+                        <div class="heading">
+                            <div class="title">
+                                <h2>6. Erhalte deine fertige Bewerbung</h2>
+                            </div>
                         </div>
                     </div>
-                    <div class="heading">
-                        <div class="title">
-                            <h2>2. Welches ist dein Gebiet?</h2>
-                        </div>
-                    </div>
-                    <div class="heading">
-                        <div class="title">
-                            <h2>3. Erzähl uns wer du bist</h2>
-                        </div>
-                    </div>
-                    <div class="heading">
-                        <div class="title">
-                            <h2>4. Erzähl uns von deinem Lebenslauf</h2>
-                        </div>
-                    </div>
-                    <div class="heading">
-                        <div class="title">
-                            <h2>5. Füge deine Dokumente hinzu</h2>
-                        </div>
-                    </div>
-                    <div class="heading">
-                        <div class="title">
-                            <h2>6. Erhalte deine fertige Bewerbung</h2>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="steps">
-                    <div class="step active step1">
-                        <div class="stepwrap">
-                            <div class="options">
-                                <div class="input-wrap">
-                                    <input type="radio" id="bewerbung" name="step1">
-                                    <label for="bewerbung">
-                                        <i class="iconfont icon-laptop">&#xe803;</i>
-                                        <p>Bewerbung inklusive Bewer-bungsschreiben und Lebenslauf</p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="radio" id="nur-ein" name="step1" checked>
-                                    <label for="nur-ein">
-                                        <i class="iconfont icon-presentation">&#xe805;</i>
-                                        <p>Nur ein Lebenslauf</p>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step step2">
-                        <div class="stepwrap">
-                            <div class="options">
-                                <div class="input-wrap">
-                                    <input type="radio" id="step2-input1" name="step2">
-                                    <label for="step2-input1">
-                                        <i class="iconfont icon-laptop">&#xe803;</i>
-                                        <p>Kaufmännischer Beruf</p>
-                                        <p><small>Du arbeitest als Beruf1, Beruf2 oder Beruf3</small></p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="radio" id="step2-input2" name="step2" checked>
-                                    <label for="step2-input2">
-                                        <i class="iconfont icon-presentation">&#xe805;</i>
-                                        <p>Informatik und so</p>
-                                        <p><small>Du arbeitest im Bere-ich der Informatik</small></p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="radio" id="step2-input3" name="step2">
-                                    <label for="step2-input3">
-                                        <i class="iconfont icon-laptop">&#xe803;</i>
-                                        <p>Handwerklicher Beruf</p>
-                                        <p><small>Du arbeitest als Beruf1, Beruf2 oder Beruf3</small></p>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step step3">
-                        <div class="stepwrap">
-                            <div class="personal-details">
-                                <div class="collapse-button">
-                                    <p>Persönliche Details</p>
-                                    <i class="fas fa-chevron-up"></i>
-                                </div>
-                                <div class="collapse-area">
-                                    <div class="upliadImage">
-                                        <img src="assets/images/image-placeholder.jpg" alt="">
-                                        <a href="">Bewerbungsfoto hochladen</a>
+                    <div class="steps">
+                        <div class="step active step1">
+                            <div class="stepwrap">
+                                <div class="options">
+                                    <div class="input-wrap">
+                                        <input type="radio" id="bewerbung" name="step1">
+                                        <label for="bewerbung">
+                                            <i class="iconfont icon-laptop">&#xe803;</i>
+                                            <p>Bewerbung inklusive Bewer-bungsschreiben und Lebenslauf</p>
+                                        </label>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Vorname">
+                                    <div class="input-wrap">
+                                        <input type="radio" id="nur-ein" name="step1" checked>
+                                        <label for="nur-ein">
+                                            <i class="iconfont icon-presentation">&#xe805;</i>
+                                            <p>Nur ein Lebenslauf</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step2">
+                            <div class="stepwrap">
+                                <div class="options">
+                                    <div class="input-wrap">
+                                        <input type="radio" id="step2-input1" name="step2">
+                                        <label for="step2-input1">
+                                            <i class="iconfont icon-laptop">&#xe803;</i>
+                                            <p>Kaufmännischer Beruf</p>
+                                            <p><small>Du arbeitest als Beruf1, Beruf2 oder Beruf3</small></p>
+                                        </label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="radio" id="step2-input2" name="step2" checked>
+                                        <label for="step2-input2">
+                                            <i class="iconfont icon-presentation">&#xe805;</i>
+                                            <p>Informatik und so</p>
+                                            <p><small>Du arbeitest im Bere-ich der Informatik</small></p>
+                                        </label>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <input type="radio" id="step2-input3" name="step2">
+                                        <label for="step2-input3">
+                                            <i class="iconfont icon-laptop">&#xe803;</i>
+                                            <p>Handwerklicher Beruf</p>
+                                            <p><small>Du arbeitest als Beruf1, Beruf2 oder Beruf3</small></p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step3">
+                            <div class="stepwrap">
+                                <div class="personal-details">
+                                    <div class="collapse-button">
+                                        <p>Persönliche Details</p>
+                                        <i class="fas fa-chevron-up"></i>
+                                    </div>
+                                    <div class="collapse-area">
+                                        <div class="upliadImage">
+                                            <img src="assets/images/image-placeholder.jpg" alt="">
+                                            <a href="">Bewerbungsfoto hochladen</a>
                                         </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Nachname">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Vorname">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Nachname">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="E-Mail Adresse">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Telefonnummer">
+                                            </div>
+                                            <div class="col-6">
+                                                <select name="" id="">
+                                                    <option value="">Land</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Ort">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Strasse">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="PLZ">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Nationalität">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" placeholder="Geburtsdatum">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="textarea">
+                                                    <div id="editor" class="editor">
+                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Deine persönliche Beschreibung</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="E-Mail Adresse">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Telefonnummer">
-                                        </div>
-                                        <div class="col-6">
-                                            <select name="" id="">
-                                                <option value="">Land</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Ort">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Strasse">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="PLZ">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Nationalität">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" placeholder="Geburtsdatum">
-                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step step4">
+                            <div class="stepwrap">
+                                <div class="collapse-items">
+                                    <div class="row onecolumn">
                                         <div class="col-12">
-                                            <div class="textarea">
-                                                <div id="editor" class="editor">
-                                                    <textarea name="" id="" cols="30" rows="5" placeholder="">Deine persönliche Beschreibung</textarea>
+                                            <div class="collapse-item">
+                                                <div class="collapse-button">
+                                                    <p>Schulische Bildung</p>
+                                                    <i class="fas fa-chevron-up"></i>
+                                                    <div class="trashAndMove">
+                                                        <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                        <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-area">
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button collapsed">
+                                                            <p>School Name <small>Jan 2017 - Aug 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button">
+                                                            <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row twocolumn deactive--">
+                                        <div class="col-6">
+                                            <div class="collapse-item">
+                                                <div class="collapse-button">
+                                                    <p>Schulische Bildung</p>
+                                                    <i class="fas fa-chevron-up"></i>
+                                                    <div class="trashAndMove">
+                                                        <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                        <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-area">
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button">
+                                                            <p>School Name <small>Jan 2017 - Aug 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="collapse-item">
+                                                <div class="collapse-button collapsed">
+                                                    <p>Beruflicher Werdegang</p>
+                                                    <i class="fas fa-chevron-up"></i>
+                                                    <div class="trashAndMove">
+                                                        <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                        <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-area">
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button collapsed">
+                                                            <p>School Name <small>Jan 2017 - Aug 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button">
+                                                            <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="collapse-item">
+                                                <div class="collapse-button collapsed">
+                                                    <p>Skills</p>
+                                                    <i class="fas fa-chevron-up"></i>
+                                                    <div class="trashAndMove">
+                                                        <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                        <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="collapse-area">
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button collapsed">
+                                                            <p>School Name <small>Jan 2017 - Aug 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse-sub-item">
+                                                        <div class="collapse-button">
+                                                            <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
+                                                            <i class="fas fa-chevron-up"></i>
+                                                            <div class="trashAndMove">
+                                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="collapse-area">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Schule">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Ort">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <input type="text" placeholder="09.2020">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" placeholder="Abschluss">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="textarea">
+                                                                        <div id="editor" class="editor">
+                                                                            <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,444 +493,139 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="step step4">
-                        <div class="stepwrap">
-                            <div class="collapse-items">
-                                <div class="row onecolumn">
-                                    <div class="col-12">
-                                        <div class="collapse-item">
-                                            <div class="collapse-button">
-                                                <p>Schulische Bildung</p>
-                                                <i class="fas fa-chevron-up"></i>
-                                                <div class="trashAndMove">
-                                                    <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                    <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="collapse-area">
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button collapsed">
-                                                        <p>School Name <small>Jan 2017 - Aug 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button">
-                                                        <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                        <div class="step step5">
+                            <div class="stepwrap">
+                                <div class="files">
+                                    <div class="file">
+                                        <div class="wrap">
+                                            <i class="fas fa-copy text-sky"></i>
+                                            <p>work-exper-ience-com...</p>
+                                            <div class="trashAndMove">
+                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row twocolumn deactive---">
-                                    <div class="col-6">
-                                        <div class="collapse-item">
-                                            <div class="collapse-button">
-                                                <p>Schulische Bildung</p>
-                                                <i class="fas fa-chevron-up"></i>
-                                                <div class="trashAndMove">
-                                                    <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                    <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="collapse-area">
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button">
-                                                        <p>School Name <small>Jan 2017 - Aug 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                    <div class="file">
+                                        <div class="wrap">
+                                            <i class="fas fa-copy text-purple"></i>
+                                            <p>other-doc.pdf</p>
+                                            <div class="trashAndMove">
+                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="collapse-item">
-                                            <div class="collapse-button collapsed">
-                                                <p>Beruflicher Werdegang</p>
-                                                <i class="fas fa-chevron-up"></i>
-                                                <div class="trashAndMove">
-                                                    <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                    <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="collapse-area">
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button collapsed">
-                                                        <p>School Name <small>Jan 2017 - Aug 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button">
-                                                        <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                    <div class="file">
+                                        <div class="wrap">
+                                            <i class="fas fa-copy text-pink"></i>
+                                            <p>a-good-document.pdf</p>
+                                            <div class="trashAndMove">
+                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
                                             </div>
                                         </div>
-                                        <div class="collapse-item">
-                                            <div class="collapse-button collapsed">
-                                                <p>Skills</p>
-                                                <i class="fas fa-chevron-up"></i>
-                                                <div class="trashAndMove">
-                                                    <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                    <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                </div>
+                                    </div>
+                                    <div class="file">
+                                        <div class="wrap">
+                                            <i class="fas fa-copy text-yellow"></i>
+                                            <p>one-more-doc-here.pdf</p>
+                                            <div class="trashAndMove">
+                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
                                             </div>
-                                            <div class="collapse-area">
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button collapsed">
-                                                        <p>School Name <small>Jan 2017 - Aug 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="collapse-sub-item">
-                                                    <div class="collapse-button">
-                                                        <p>Unspecified <small>Sep 2020 - Sep 2020</small></p>
-                                                        <i class="fas fa-chevron-up"></i>
-                                                        <div class="trashAndMove">
-                                                            <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
-                                                            <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="collapse-area">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Schule">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Ort">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <input type="text" placeholder="09.2020">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <input type="text" placeholder="Abschluss">
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="textarea">
-                                                                    <div id="editor" class="editor">
-                                                                        <textarea name="" id="" cols="30" rows="5" placeholder="">Beschreibung</textarea>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <a href="" class="btn-add"><i class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="file">
+                                        <div class="wrap">
+                                            <i class="fas fa-copy text-sky"></i>
+                                            <p>another-good-doc...</p>
+                                            <div class="trashAndMove">
+                                                <a href="" class="move btn"><i class="fas fa-arrows-alt"></i></a>
+                                                <a href="" class="trash btn"><i class="fas fa-trash"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="step step5">
-                        <div class="stepwrap">
-                            <div class="smalloptions options">
-                                <div class="input-wrap">
-                                    <input type="file" id="step5-input1">
-                                    <label for="step5-input1">
-                                        <i class="fas fa-copy text-sky"></i>
-                                        <p>work-exper-ience-com...</p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="file" id="step5-input2">
-                                    <label for="step5-input2">
-                                        <i class="fas fa-copy text-purple"></i>
-                                        <p>other-doc.pdf</p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="file" id="step5-input3">
-                                    <label for="step5-input3">
-                                        <i class="fas fa-copy text-pink"></i>
-                                        <p>a-good-document.pdf</p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="file" id="step5-input4">
-                                    <label for="step5-input4">
-                                        <i class="fas fa-copy text-yellow"></i>
-                                        <p>one-more-doc-here.pdf</p>
-                                    </label>
-                                </div>
-                                <div class="input-wrap">
-                                    <input type="file" id="step5-input5">
-                                    <label for="step5-input5">
-                                        <i class="fas fa-copy text-sky"></i>
-                                        <p>another-good-doc...</p>
-                                    </label>
-                                </div>
+                        <div class="step step6">
+                            <div class="stepwrap">
+                                <p>Du hast es geschafft. Schau dir die Bewerbung nochmals genau durch. <br>
+                                    Solltest du zu einem späteren Zeitpunkt noch Fehler finden, kannst du diese jederzeit korrigieren. <br>
+                                    Du kannst deine Bewerbung jetzt herunterladen.</p>
+                                <a href="" class="btn download">Herunterladen</a>
                             </div>
                         </div>
                     </div>
-                    <div class="step step6">
-                        <div class="stepwrap">
-                            <p>Du hast es geschafft. Schau dir die Bewerbung nochmals genau durch. <br>
-                                Solltest du zu einem späteren Zeitpunkt noch Fehler finden, kannst du diese jederzeit korrigieren. <br>
-                                Du kannst deine Bewerbung jetzt herunterladen.</p>
-                            <a href="" class="btn download">Herunterladen</a>
+                    <div class="extra-for-3-4">
+                        <div class="title">
+                            <h2>Abschnitte hinzufügen</h2>
                         </div>
-                    </div>
-                </div>
-                <div class="extra-for-3-4">
-                    <div class="title">
-                        <h2>Abschnitte hinzufügen</h2>
-                    </div>
-                    <div class="smalloptions options">
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra1" name="extra">
-                            <label for="extra1">
-                                <i class="objIcon ic-object1 text-sky"></i>
-                                <p>Schulische Bildung</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra2" name="extra" checked>
-                            <label for="extra2">
-                                <i class="objIcon ic-object3 text-purple"></i>
-                                <p>Beruflicher Werdegang</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra3" name="extra">
-                            <label for="extra3">
-                                <i class="objIcon ic-object4 text-pink"></i>
-                                <p>Sprachen</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra4" name="extra">
-                            <label for="extra4">
-                                <i class="objIcon ic-object5 text-yellow"></i>
-                                <p>Skills</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra5" name="extra">
-                            <label for="extra5">
-                                <i class="objIcon ic-object6 text-sky"></i>
-                                <p>Projects</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra6" name="extra">
-                            <label for="extra6">
-                                <i class="objIcon ic-object7 text-yellow"></i>
-                                <p>Awards</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra7" name="extra">
-                            <label for="extra7">
-                                <i class="objIcon ic-object2 text-purple"></i>
-                                <p>References</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra8" name="extra">
-                            <label for="extra8">
-                                <i class="objIcon ic-object8 text-sky"></i>
-                                <p>Hobbies</p>
-                            </label>
-                        </div>
-                        <div class="input-wrap">
-                            <input type="checkbox" id="extra9" name="extra">
-                            <label for="extra9">
-                                <i class="objIcon ic-object9 text-pink"></i>
-                                <p>Page Break</p>
-                            </label>
+                        <div class="smalloptions options">
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra1" name="extra">
+                                <label for="extra1">
+                                    <i class="objIcon ic-object1 text-sky"></i>
+                                    <p>Schulische Bildung</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra2" name="extra" checked>
+                                <label for="extra2">
+                                    <i class="objIcon ic-object3 text-purple"></i>
+                                    <p>Beruflicher Werdegang</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra3" name="extra">
+                                <label for="extra3">
+                                    <i class="objIcon ic-object4 text-pink"></i>
+                                    <p>Sprachen</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra4" name="extra">
+                                <label for="extra4">
+                                    <i class="objIcon ic-object5 text-yellow"></i>
+                                    <p>Skills</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra5" name="extra">
+                                <label for="extra5">
+                                    <i class="objIcon ic-object6 text-sky"></i>
+                                    <p>Projects</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra6" name="extra">
+                                <label for="extra6">
+                                    <i class="objIcon ic-object7 text-yellow"></i>
+                                    <p>Awards</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra7" name="extra">
+                                <label for="extra7">
+                                    <i class="objIcon ic-object2 text-purple"></i>
+                                    <p>References</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra8" name="extra">
+                                <label for="extra8">
+                                    <i class="objIcon ic-object8 text-sky"></i>
+                                    <p>Hobbies</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="checkbox" id="extra9" name="extra">
+                                <label for="extra9">
+                                    <i class="objIcon ic-object9 text-pink"></i>
+                                    <p>Page Break</p>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
