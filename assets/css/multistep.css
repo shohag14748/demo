@@ -1084,6 +1084,12 @@ body {
         right: 25px;
         bottom: 110px
     }
+    .form .buttons {
+        height: 115px;
+    }
+    .form .buttons .btn{
+        height: 45px;
+    }
 }
 
 @media (max-width:768px) {
