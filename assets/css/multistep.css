@@ -1222,7 +1222,10 @@ body {
     .form .steps .personal-details .collapse-button {
         padding: 0;
     }
-
+    .mutistep-form .preview .swiper-container {
+        max-width: 100vw;
+        max-height: 85vh;
+    }
 
 }
 
