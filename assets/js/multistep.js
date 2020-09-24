@@ -81,6 +81,10 @@ $(document).ready(function () {
         e.preventDefault();
         $('.popup').addClass('active');
     });
+    $('.fertig').click(function(e){
+        e.preventDefault();
+        $('.popup').removeClass('active');
+    });
     $('.preview-btn').click(function(e){
         e.preventDefault();
         $('.mutistep-form .preview').addClass('active');
@@ -88,6 +92,15 @@ $(document).ready(function () {
     $('.mutistep-form .preview .close').click(function(e){
         e.preventDefault();
         $('.mutistep-form .preview').removeClass('active');
+    });
+    $('.popup .weiter').click(function(e){
+        e.preventDefault();
+        if ($('.popup .tips:last-child').prev().index()  == $('.popup .tips.active').index()){
+             $('.popup .weiter').hide();
+        }
+        if ($('.popup .tips:last-child').index() != $('.popup .tips.active').index()){
+            $('.popup .tips.active').removeClass('active').next().addClass('active');
+        }
     });
     
 });

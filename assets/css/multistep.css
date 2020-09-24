@@ -82,13 +82,15 @@ body {
 }
 
 .mutistep-form .preview .swiper-container {
-    max-width: 60.23vh;
+    max-width: 90%;
+    width: 60.23vh;
     max-height: 85vh;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    
 }
 
 .mutistep-form .preview .swiper-container .swiper-slide {
@@ -448,7 +450,7 @@ body {
     padding: 12.5px 20px;
     border: 0;
     border-radius: 50px;
-    background: #f4f5f9;
+    background-color: #f4f5f9;
     color: #2e3d62;
     font-weight: 600;
     font-size: 14px;
@@ -456,6 +458,10 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-image: url(../images/chevron-down-solid.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center right 15px;
 }
 
 .form .steps .personal-details .col-6 input::placeholder {
@@ -947,6 +953,12 @@ body {
     padding: 10px 15px;
     margin-bottom: 30px;
     line-height: 22px;
+}
+.popup .wrap .tips{
+    display: none;
+}
+.popup .wrap .tips.active{
+    display: block;
 }
 
 .popup .wrap .buttons {
