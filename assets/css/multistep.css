@@ -11,14 +11,11 @@ body {
     min-height: 100vh;
     position: relative;
     background: #fff;
-    background: red;
-/*
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-*/
 }
 
 .mutistep-form .form::-webkit-scrollbar {
@@ -1036,11 +1033,19 @@ body {
         width: 100%;
         padding-bottom: 10px;
     }
+    
+    .mutistep-form .form {
+        min-height: 100vh;
+        overflow: visible;
+    }
     .mutistep-form .preview {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: -99999;
+        height: 100vh;
         background: rgba(202, 206, 224, 1);
+        top: 0;
+        left: 0;
     }
     .mutistep-form .preview>div{
         transform: scale(.5);
