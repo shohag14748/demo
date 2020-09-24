@@ -1031,6 +1031,7 @@ body {
 
     .mutistep-form .form {
         width: 100%;
+        padding-bottom: 10px;
     }
     .mutistep-form .preview {
         position: absolute;
