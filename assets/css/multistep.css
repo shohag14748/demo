@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     position: relative;
     background: #fff;
+    background: red;
 /*
     max-height: 100vh;
     overflow-y: auto;
