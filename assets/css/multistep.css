@@ -1,6 +1,7 @@
-body{
+body {
     background: rgba(202, 206, 224, .2);
 }
+
 .mutistep-form {
     display: flex;
 }
@@ -9,7 +10,7 @@ body{
     width: 55%;
     min-height: 100vh;
     position: relative;
-    background: #fff;   
+    background: #fff;
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -22,12 +23,14 @@ body{
 }
 
 
-.mutistep-form .form .bg{
+.mutistep-form .form .bg {
     display: none;
 }
-.mutistep-form .form .bg img{
+
+.mutistep-form .form .bg img {
     width: 100%;
 }
+
 .mutistep-form .form .bg-left {
     position: absolute;
     top: 27%;
@@ -68,7 +71,8 @@ body{
     box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
     transition: .3s;
 }
-.mutistep-form .preview .close:hover{
+
+.mutistep-form .preview .close:hover {
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
@@ -76,6 +80,7 @@ body{
 .mutistep-form .preview .close i {
     line-height: 35px;
 }
+
 .mutistep-form .preview .swiper-container {
     max-width: 60.23vh;
     max-height: 85vh;
@@ -99,7 +104,7 @@ body{
     box-shadow: 0 0 30px rgba(0, 0, 0, .05);
     border-radius: 10px;
     margin-bottom: 40px;
-    max-height: calc( 85vh - 80px)
+    max-height: calc(85vh - 80px)
 }
 
 .mutistep-form .preview .swiper-button-prev,
@@ -193,18 +198,22 @@ body{
     font-size: 14px;
     border-radius: 30px;
     box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+    display: inline-block;
     transition: .3s;
 }
-.form .buttons .btn:hover{
+
+.form .buttons .btn:hover {
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
+
 .form .buttons .btn.prev-step {
     background-color: rgb(234, 234, 234);
     box-shadow: 0px 10px 30px 0px rgba(120, 120, 120, 0.3);
     color: #2e3d62;
 }
-.form .buttons .btn i{
+
+.form .buttons .btn i {
     display: none;
 }
 
@@ -432,6 +441,7 @@ body{
     font-size: 14px;
     margin-bottom: 25px;
 }
+
 .form .steps .personal-details .col-6 select {
     display: block;
     width: 100%;
@@ -496,12 +506,13 @@ body{
     width: 25%;
     padding: 0 10px;
 }
+
 .collapse-items .btn-add {
     width: 30px;
     height: 30px;
     font-size: 12px;
-  background-color: rgb(51, 79, 224);
-  box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+    background-color: rgb(51, 79, 224);
+    box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
     display: block;
     color: #fff;
     border-radius: 50%;
@@ -509,7 +520,8 @@ body{
     line-height: 30px;
     transition: .3s;
 }
-.collapse-items .btn-add:hover{
+
+.collapse-items .btn-add:hover {
     background-color: #fff;
     color: rgb(51, 79, 224) !important;
 }
@@ -533,7 +545,8 @@ body{
     border-radius: 10px;
     position: relative;
 }
-.collapse-item .trashAndMove{
+
+.collapse-item .trashAndMove {
     position: absolute;
     left: 100%;
     z-index: 999;
@@ -543,11 +556,13 @@ body{
     padding-left: 10px;
     width: 90px;
 }
-.collapse-item .collapse-button:hover .trashAndMove{
+
+.collapse-item .collapse-button:hover .trashAndMove {
     opacity: 1;
     pointer-events: all;
 }
-.trashAndMove .btn{
+
+.trashAndMove .btn {
     width: 25px;
     height: 25px;
     background: red;
@@ -558,79 +573,98 @@ body{
     border-radius: 50%;
     transition: .3s;
 }
-.trashAndMove .btn i{
+
+.trashAndMove .btn i {
     font-size: 10px !important;
     color: #fff !important;
     transition: .3s;
 }
-.trashAndMove .move{
-  background-color: rgb(51, 79, 224);
-  box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
-    
+
+.trashAndMove .move {
+    background-color: rgb(51, 79, 224);
+    box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+
 }
-.trashAndMove .move:hover{
+
+.trashAndMove .move:hover {
     background-color: #fff;
 }
-.trashAndMove .btn.move:hover i{
+
+.trashAndMove .btn.move:hover i {
     color: rgb(51, 79, 224) !important;
 }
 
-.trashAndMove .trash{
-  background-color: rgb(238, 83, 155);
-  box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
-    
+.trashAndMove .trash {
+    background-color: rgb(238, 83, 155);
+    box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+
 }
-.trashAndMove .trash:hover{
+
+.trashAndMove .trash:hover {
     background: #fff;
 }
-.trashAndMove .btn.trash:hover i{
+
+.trashAndMove .btn.trash:hover i {
     color: rgb(238, 83, 155) !important;
 }
-.collapse-item .collapse-button.collapsed + .collapse-area{
+
+.collapse-item .collapse-button.collapsed + .collapse-area {
     display: none;
 }
-.collapse-item .collapse-button p{
+
+.collapse-item .collapse-button p {
     color: #2e3d62;
 }
-.collapse-item .collapse-button i{
+
+.collapse-item .collapse-button i {
     color: #334fe0;
     font-size: 18px;
     transition: .3s;
 }
-.collapse-item .collapse-button.collapsed>i{
+
+.collapse-item .collapse-button.collapsed > i {
     transform: rotateX(180deg);
-     color: #2e3d62;
+    color: #2e3d62;
 }
-.collapse-item .collapse-area{
+
+.collapse-item .collapse-area {
     padding: 15px 25px;
     display: none;
 }
-.collapse-sub-item{
+
+.collapse-sub-item {
     border: 2px solid #f4f5f9;
     border-radius: 8px;
     margin-bottom: 15px;
 }
-.collapse-sub-item:last-child{
+
+.collapse-sub-item:last-child {
     margin-bottom: 0;
 }
-.collapse-sub-item .collapse-button{
+
+.collapse-sub-item .collapse-button {
     padding: 8px 12px;
 }
-.collapse-sub-item .collapse-button p{
+
+.collapse-sub-item .collapse-button p {
     font-size: 12px;
 }
-.collapse-sub-item .collapse-button p small{
+
+.collapse-sub-item .collapse-button p small {
     margin-left: 10px;
     color: #666e82;
 }
-.collapse-sub-item .collapse-button i{
+
+.collapse-sub-item .collapse-button i {
     color: #666e82;
     font-size: 14px;
 }
-.collapse-sub-item .collapse-area{
+
+.collapse-sub-item .collapse-area {
     padding: 15px 25px;
 }
-.collapse-item  input {
+
+.collapse-item input {
     display: block;
     width: 100%;
     padding: 12px 20px;
@@ -666,71 +700,84 @@ body{
     border: 0;
     padding: 8px 15px 0;
 }
+
 .collapse-item .ql-snow.ql-toolbar button {
     height: 22px;
     width: 24px;
 }
+
 .collapse-item .ql-editor {
     padding: 10px 20px;
 }
+
 .collapse-items .onecolumn.deactive,
-.collapse-items .twocolumn.deactive{
+.collapse-items .twocolumn.deactive {
     display: none;
 }
 
 
-.form .smalloptions .input-wrap{
+.form .smalloptions .input-wrap {
     width: 20%;
     text-align: center;
     padding: 8px;
 }
-.form .smalloptions .input-wrap i{
+
+.form .smalloptions .input-wrap i {
     font-size: 25px !important;
 }
-.form .smalloptions .input-wrap label{
+
+.form .smalloptions .input-wrap label {
     padding: 15px 5px;
     min-height: 110px;
     border-radius: 10px;
 }
-.form .smalloptions .input-wrap label p{
+
+.form .smalloptions .input-wrap label p {
     font-size: 12px;
     line-height: 16px;
     margin-top: 5px;
 }
 
-.form .smalloptions .input-wrap label .text-pink{
+.form .smalloptions .input-wrap label .text-pink {
     color: rgb(238, 83, 155)
 }
-.form .smalloptions .input-wrap label .text-sky{
+
+.form .smalloptions .input-wrap label .text-sky {
     color: #5dd8d3;
 }
-.form .smalloptions .input-wrap label .text-purple{
+
+.form .smalloptions .input-wrap label .text-purple {
     color: #9364d4;
 }
-.form .smalloptions .input-wrap label .text-yellow{
+
+.form .smalloptions .input-wrap label .text-yellow {
     color: #fddd6e;
 }
+
 .form .smalloptions .input-wrap label:hover {
     background: #334fe0;
 }
+
 .form .smalloptions .input-wrap label:hover p,
-.form .smalloptions .input-wrap label:hover i{
+.form .smalloptions .input-wrap label:hover i {
     color: #fff;
 }
 
 
 
 
-.form .files{
+.form .files {
     display: flex;
-    padding:0 -10px;
+    padding: 0 -10px;
     position: relative;
 }
-.form .files .file{
+
+.form .files .file {
     padding: 10px;
     width: 25%;
 }
-.form .files .file .wrap{
+
+.form .files .file .wrap {
     padding: 15px 5px;
     min-height: 110px;
     border-radius: 10px;
@@ -743,7 +790,8 @@ body{
     width: 100%;
     text-align: center;
 }
-.form .files .file .trashAndMove{
+
+.form .files .file .trashAndMove {
     position: absolute;
     width: 30px;
     left: 100%;
@@ -752,49 +800,59 @@ body{
     z-index: 999;
     display: none;
 }
-.form .files .file .trashAndMove a{
+
+.form .files .file .trashAndMove a {
     margin: 4px 0;
 }
 
-.form .files .file .wrap>i{
+.form .files .file .wrap > i {
     font-size: 25px !important;
 }
-.form .files .file .wrap p{
+
+.form .files .file .wrap p {
     font-size: 12px;
     line-height: 16px;
     margin-top: 5px;
     font-weight: 600;
     color: #2e3d62;
 }
-.form .files .file .text-pink{
+
+.form .files .file .text-pink {
     color: rgb(238, 83, 155)
 }
-.form .files .file .text-sky{
+
+.form .files .file .text-sky {
     color: #5dd8d3;
 }
-.form .files .file .text-purple{
+
+.form .files .file .text-purple {
     color: #9364d4;
 }
-.form .files .file .text-yellow{
+
+.form .files .file .text-yellow {
     color: #fddd6e;
 }
+
 .form .files .file .wrap:hover {
     background: #334fe0;
 }
+
 .form .files .file .wrap:hover p,
-.form .files .file .wrap:hover i{
+.form .files .file .wrap:hover i {
     color: #fff;
 }
-.form .files .file .wrap:hover .trashAndMove{
+
+.form .files .file .wrap:hover .trashAndMove {
     display: block;
 }
 
-.form .step6 p{
+.form .step6 p {
     font-size: 12px;
     color: #666e82;
     padding-top: 20px;
 }
-.form .step6 .btn.download{
+
+.form .step6 .btn.download {
     background: #334fe0;
     font-weight: 600;
     color: #fff;
@@ -808,7 +866,8 @@ body{
     max-width: 140px;
     margin: 40px auto 20px;
 }
-.form .step6 .btn.download:hover{
+
+.form .step6 .btn.download:hover {
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
@@ -820,40 +879,47 @@ body{
     display: none;
     padding-bottom: 30px;
 }
-.extra-for-3-4.active{
+
+.extra-for-3-4.active {
     display: block;
 }
+
 .extra-for-3-4 .title {
     margin-bottom: 0px;
 }
-.extra-for-3-4 .title h2{
+
+.extra-for-3-4 .title h2 {
     font-size: 32px;
     text-align: left;
 }
-.extra-for-3-4 .smalloptions .input-wrap i{
+
+.extra-for-3-4 .smalloptions .input-wrap i {
     font-size: 30px !important;
     transform: scale(1.1);
     display: block;
     transform-origin: top;
 }
-.extra-for-3-4 .smalloptions .input-wrap i.ic-object2{
+
+.extra-for-3-4 .smalloptions .input-wrap i.ic-object2 {
     transform: scale(1.4)
 }
 
-.popup{
+.popup {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(51,51,51,.4);
-    
+    background: rgba(51, 51, 51, .4);
+
     opacity: 0;
     z-index: -999999999999999;
 }
-.popup.active{
+
+.popup.active {
     z-index: 99999999;
     opacity: 1;
 }
-.popup .wrap{
+
+.popup .wrap {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -861,30 +927,35 @@ body{
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     transition: .3s;
 }
-.popup.active .wrap{
-    transform: translate(-50%,-50%) scale(1);
+
+.popup.active .wrap {
+    transform: translate(-50%, -50%) scale(1);
 }
-.popup .wrap h4{
+
+.popup .wrap h4 {
     font-size: 20px;
     color: #2e3d62;
     padding: 10px 15px;
 }
-.popup .wrap p{
+
+.popup .wrap p {
     color: #666e82;
     font-size: 10px;
     padding: 10px 15px;
     margin-bottom: 30px;
     line-height: 22px;
 }
-.popup .wrap .buttons{
+
+.popup .wrap .buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.popup .wrap .buttons a{
+
+.popup .wrap .buttons a {
     text-decoration: none;
     background: #334fe0;
     font-weight: 600;
@@ -896,47 +967,107 @@ body{
     box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
     transition: .3s;
 }
+
 .popup .wrap .buttons a:first-child {
     background-color: rgb(234, 234, 234);
     box-shadow: 0px 10px 30px 0px rgba(120, 120, 120, 0.3);
     color: #2e3d62;
 }
-.popup .wrap .buttons a:hover{
+
+.popup .wrap .buttons a:hover {
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
 
 
-.form .buttons .extra-btn{
+.form .buttons .extra-btn {
     display: none;
 }
 
-@media (max-width:1500px){
+.form .add-more {}
+
+.form .add-more .btn-add{
+    width: 45px;
+    height: 45px;
+    background: #334fe0;
+    text-align: center;
+    display: block;
+    margin:  20px auto;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 45px;
+    box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+    transition: .3s;
+}
+
+.form .add-more .btn-add:hover {
+    background-color: #fff !important;
+    color: rgb(51, 79, 224) !important;
+}
+.form .preview-btn{
+    display: none;
+}
+@media (max-width:1500px) {
     .collapse-item .trashAndMove {
         left: auto;
         right: 0;
         top: -25px;
     }
 }
-@media (max-width:991px){
+
+@media (max-width:991px) {
+
+    .mutistep-form .form {
+        width: 100%;
+    }
     .mutistep-form .preview {
-        display: none;
-        width: 0;
-    }
-    .mutistep-form .form  {
+        position: absolute;
         width: 100%;
+        z-index: -99999;
+        background: rgba(202, 206, 224, 1);
+    }
+    .mutistep-form .preview>div{
+        transform: scale(.5);
+        opacity: 0;
+        transition: .3s;
+    }
+    .mutistep-form .preview.active> .swiper-container{
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 1;
+    }
+    .mutistep-form .preview.active {
+        z-index: 99999;
+    }
+    .form .preview-btn{
+        width: 45px;
+        height: 45px;
+        background: #334fe0;
+        text-align: center;
+        display: block;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 45px;
+        box-shadow: 0px 10px 30px 0px rgba(94, 44, 237, 0.3);
+        transition: .3s;
+        position: fixed;
+        z-index: 999;
+        right: 25px;
+        bottom: 110px
     }
 }
-@media (max-width:768px){
+
+@media (max-width:768px) {
     .collapse-items .row.twocolumn {
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
     }
-    .collapse-items .row.twocolumn>.col-6{
+
+    .collapse-items .row.twocolumn > .col-6 {
         width: 100%;
     }
 }
-@media (max-width:576px){
-    .form .buttons .btn{
+
+@media (max-width:576px) {
+    .form .buttons .btn {
         width: 45px;
         height: 45px;
         padding: 0;
@@ -944,30 +1075,36 @@ body{
         text-align: center;
         border-radius: 50%;
     }
-    .form .buttons .btn i{
+
+    .form .buttons .btn i {
         display: block;
         font-size: 20px;
         line-height: 45px
     }
-    .form .buttons .btn span{
+
+    .form .buttons .btn span {
         display: none;
     }
-    
-    .form .buttons .extra-btn{
+
+    .form .buttons .extra-btn {
         display: block;
         position: relative;
     }
-    .form .buttons .extra-btn a{
+
+    .form .buttons .extra-btn a {
         display: block;
     }
-    .form .buttons .extra-btn a i{
+
+    .form .buttons .extra-btn a i {
         font-size: 18px;
     }
-    .form .buttons .prev-step{
+
+    .form .buttons .prev-step {
         position: absolute;
         right: 90px;
     }
-    .form .buttons ul{
+
+    .form .buttons ul {
         position: absolute;
         left: calc(100% + 12px);
         list-style: none;
@@ -979,23 +1116,28 @@ body{
         z-index: 999;
         display: none;
     }
-    .form .buttons ul::after{
+
+    .form .buttons ul::after {
         content: '';
-        width: 12px;height: 12px;
+        width: 12px;
+        height: 12px;
         background: #fff;
         position: absolute;
         left: -6px;
         bottom: 18px;
         transform: rotate(45deg)
     }
-    .form .buttons ul::before{
+
+    .form .buttons ul::before {
         content: '';
-        width: 15px;height: 40px;
+        width: 15px;
+        height: 40px;
         position: absolute;
         left: -15px;
         bottom: 0px;
     }
-    .form .buttons ul a{
+
+    .form .buttons ul a {
         padding: 4px 10px;
         display: block;
         text-decoration: none;
@@ -1004,69 +1146,90 @@ body{
         line-height: 12px;
         color: #2e3d62;
     }
-    .form .buttons .extra-btn:hover ul{
+
+    .form .buttons .extra-btn:hover ul {
         display: block;
     }
-    .form .buttons ul a:hover{
+
+    .form .buttons ul a:hover {
         background: #f4f5f9;
         color: #334fe0;
     }
-    
-    
-    .form .wrap .title h2{
+
+
+    .form .wrap .title h2 {
         font-size: 26px;
     }
-    .form .wrap{
+
+    .form .wrap {
         padding-left: 25px;
         padding-right: 25px;
         width: 100%;
     }
+
     .form .options .input-wrap {
         width: 100%;
     }
-    .form .options .input-wrap label{
+
+    .form .options .input-wrap label {
         min-height: 140px;
         padding: 20px;
     }
-    .form .col-3{
+
+    .form .col-3 {
         width: 50%;
     }
-    
-    .form .smalloptions .input-wrap{
+
+    .form .smalloptions .input-wrap {
         width: 33.33%;
         text-align: center;
         padding: 8px;
     }
-    .form .smalloptions .input-wrap label{
+
+    .form .smalloptions .input-wrap label {
         min-height: 100px;
     }
+
     .form .files {
         flex-flow: wrap;
     }
-    .form .files .file{
+
+    .form .files .file {
         width: 33.33%;
     }
-    .form .files .file .wrap{
+
+    .form .files .file .wrap {
         min-height: 100px
     }
-    .extra-for-3-4.active{
+
+    .extra-for-3-4.active {
         display: none;
     }
+
+    .form .steps .personal-details .col-12 {
+        padding: 0 10px;
+    }
+
     .form .steps .personal-details .col-6 {
         width: 50%;
         padding: 0 10px;
     }
-    .form .steps .personal-details .collapse-button{
+
+    .form .steps .personal-details .upliadImage {
+        margin-left: -10px;
+    }
+
+    .form .steps .personal-details .collapse-button {
         padding: 0;
     }
-    
-    
+
+
 }
 
-@media (max-width:420px){
+@media (max-width:420px) {
+
     .form .smalloptions .input-wrap,
-    .form .files .file{
+    .form .files .file {
         width: 50%;
     }
 }
-

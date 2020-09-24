@@ -81,5 +81,13 @@ $(document).ready(function () {
         e.preventDefault();
         $('.popup').addClass('active');
     });
+    $('.preview-btn').click(function(e){
+        e.preventDefault();
+        $('.mutistep-form .preview').addClass('active');
+    });
+    $('.mutistep-form .preview .close').click(function(e){
+        e.preventDefault();
+        $('.mutistep-form .preview').removeClass('active');
+    });
     
 });
