@@ -1070,7 +1070,7 @@ body {
 
 @media (max-width:768px) {
     .collapse-items .row.twocolumn {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .collapse-items .row.twocolumn > .col-6 {
