@@ -82,8 +82,8 @@ body {
 }
 
 .mutistep-form .preview .swiper-container {
-    max-width: 90%;
     width: 60.23vh;
+    max-width: 40vw;
     max-height: 85vh;
     position: absolute;
     left: 50%;
