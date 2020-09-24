@@ -1019,6 +1019,12 @@ body {
 .form .preview-btn{
     display: none;
 }
+.form .buttons {
+    height: 115px;
+}
+.form .buttons .btn{
+    height: 45px;
+}
 @media (max-width:1500px) {
     .collapse-item .trashAndMove {
         left: auto;
@@ -1036,20 +1042,14 @@ body {
         width: 100%;
         padding-bottom: 10px;
     }
-    
-    .mutistep-form .form {
-        min-height: 100vh;
-        overflow: visible;
-    }
     .mutistep-form .preview {
-        position: fixed;
+        position: absolute;
         width: 100%;
         z-index: -99999;
         height: 100vh;
         background: rgba(202, 206, 224, 1);
         top: 0;
         left: 0;
-        display: none;
     }
     .mutistep-form .preview>div{
         transform: scale(.5);
@@ -1066,7 +1066,6 @@ body {
     }
     .mutistep-form .preview.active {
         z-index: 99999;
-        display: block;
     }
     .form .preview-btn{
         width: 45px;
@@ -1083,12 +1082,6 @@ body {
         z-index: 999;
         right: 25px;
         bottom: 110px
-    }
-    .form .buttons {
-        height: 115px;
-    }
-    .form .buttons .btn{
-        height: 45px;
     }
 }
 
