@@ -1049,6 +1049,7 @@ body {
         background: rgba(202, 206, 224, 1);
         top: 0;
         left: 0;
+        display: none;
     }
     .mutistep-form .preview>div{
         transform: scale(.5);
@@ -1059,8 +1060,13 @@ body {
         transform: translate(-50%,-50%) scale(1);
         opacity: 1;
     }
+    .mutistep-form .preview .swiper-container {
+        width: 60.23vh;
+        max-width: 90vw;
+    }
     .mutistep-form .preview.active {
         z-index: 99999;
+        display: block;
     }
     .form .preview-btn{
         width: 45px;
