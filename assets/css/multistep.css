@@ -11,11 +11,13 @@ body {
     min-height: 100vh;
     position: relative;
     background: #fff;
+/*
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+*/
 }
 
 .mutistep-form .form::-webkit-scrollbar {
