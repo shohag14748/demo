@@ -1144,7 +1144,9 @@ body {
         opacity: 1;
     }
 
-    
+    .previewSlider.owl-carousel{
+        max-width: 90%;
+    }
 
     .mutistep-form .preview.active {
         z-index: 99999;
