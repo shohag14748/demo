@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'object-icon';
+  src:  url('../font/object-icon.eot?4x0vcl');
+  src:  url('../font/object-icon.eot?4x0vcl#iefix') format('embedded-opentype'),
+    url('../font/object-icon.ttf?4x0vcl') format('truetype'),
+    url('../font/object-icon.woff?4x0vcl') format('woff'),
+    url('../font/object-icon.svg?4x0vcl#object-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.objIcon{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'object-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-object1:before {
+  content: "\e900";
+}
+.ic-object2:before {
+  content: "\e901";
+}
+.ic-object3:before {
+  content: "\e902";
+}
+.ic-object4:before {
+  content: "\e903";
+}
+.ic-object5:before {
+  content: "\e904";
+}
+.ic-object6:before {
+  content: "\e905";
+}
+.ic-object7:before {
+  content: "\e906";
+}
+.ic-object8:before {
+  content: "\e907";
+}
+.ic-object9:before {
+  content: "\e908";
+}
