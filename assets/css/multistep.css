@@ -190,6 +190,8 @@ body {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
+        margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .form .buttons .btn {
