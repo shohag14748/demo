@@ -22,13 +22,6 @@ body {
     display: none;
 }
 
-
-/*
-.mutistep-form .form .bg {
-    display: none;
-}
-*/
-
 .mutistep-form .form .bg img {
     width: 100%;
 }
@@ -82,7 +75,8 @@ body {
 .mutistep-form .preview .close i {
     line-height: 35px;
 }
-.previewSlider.owl-carousel{
+
+.previewSlider.owl-carousel {
     width: 52.23vh;
     max-width: 40vw;
     max-height: 80vh;
@@ -91,17 +85,19 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.previewSlider.owl-carousel .item{
+
+.previewSlider.owl-carousel .item {
     border-radius: 10px;
     padding: 20px;
     overflow: hidden;
 }
-.previewSlider.owl-carousel .item img{
+
+.previewSlider.owl-carousel .item img {
     box-shadow: 0 0 30px rgba(0, 0, 0, .05);
     border-radius: 10px;
 }
 
-.previewSlider .owl-nav{
+.previewSlider .owl-nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -114,70 +110,18 @@ body {
     right: 20px;
     bottom: 0;
 }
-.previewSlider .owl-nav button{
+
+.previewSlider .owl-nav button {
     margin-left: 15px;
     font-size: 22px !important;
 }
-.previewSlider .owl-nav button.disabled{
+
+.previewSlider .owl-nav button.disabled {
     opacity: .5;
 }
-.mutistep-form .preview .swiper-container {
-    width: 60.23vh;
-    max-width: 40vw;
-    max-height: 85vh;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    
-}
 
-.mutistep-form .preview .swiper-container .swiper-slide {
-    line-height: 0;
-    padding-bottom: 40px;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 25px;
-}
 
-.mutistep-form .preview .swiper-container .swiper-slide img {
-    width: 100%;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .05);
-    border-radius: 10px;
-    margin-bottom: 40px;
-    max-height: calc(85vh - 80px)
-}
 
-.mutistep-form .preview .swiper-button-prev,
-.mutistep-form .preview .swiper-button-next {
-    top: auto;
-    bottom: 10px !important;
-    right: 30px;
-    font-size: 24px;
-    color: #666e82 !important;
-}
-
-.mutistep-form .preview .swiper-button-prev {
-    left: auto;
-    right: 60px;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    display: none;
-}
-
-.swiper-pagination {
-    position: absolute;
-    bottom: 20px;
-    right: 90px;
-    left: auto;
-    width: auto;
-    font-size: 14px;
-    color: #666e82;
-    font-weight: 500;
-}
 
 .form .wrap {
     width: 92%;
@@ -507,33 +451,40 @@ body {
 .select2-container {
     display: block;
 }
+
 .select2-container--default .select2-selection--single {
     background-color: transparent;
-     border: 0; 
+    border: 0;
     border-radius: 00px;
-    
+
 }
+
 .select2-container .select2-selection--single .select2-selection__rendered {
     background-color: #f4f5f9;
     display: block;
     padding: 12.5px 20px !important;
     border-radius: 50px !important;
 }
+
 .select2-container .select2-selection--single {
-     height: 45px;
+    height: 45px;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #2e3d62 !important;
     line-height: 20px;
     font-size: 14px;
     font-weight: 600;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #2e3d62;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__clear {
     display: none;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 45px;
     position: absolute;
@@ -545,7 +496,8 @@ body {
     background-repeat: no-repeat;
     background-position: left center;
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow *{
+
+.select2-container--default .select2-selection--single .select2-selection__arrow * {
     display: none;
 }
 
@@ -556,27 +508,33 @@ body {
     box-shadow: 0px 0px 24px 0px rgba(46, 61, 98, 0.2);
     padding: 12px 0;
 }
+
 .select2-dropdown.select2-dropdown--above {
     margin-top: -10px;
-    
+
 }
+
 .select2-dropdown.select2-dropdown--below {
     margin-top: 10px;
-    
+
 }
+
 .select2-results__option {
     padding: 4px 15px;
     font-size: 13px;
     color: #2e3d62;
 }
+
 .select2-results__option:hover {
     background: #f4f5f9;
     color: #334fe0;
 }
+
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background: #f4f5f9;
     color: #334fe0;
 }
+
 .select2-container--default .select2-results__option--selected {
     background: #fff;
     color: #334fe0;
@@ -1076,10 +1034,12 @@ body {
     margin-bottom: 30px;
     line-height: 22px;
 }
-.popup .wrap .tips{
+
+.popup .wrap .tips {
     display: none;
 }
-.popup .wrap .tips.active{
+
+.popup .wrap .tips.active {
     display: block;
 }
 
@@ -1120,13 +1080,13 @@ body {
 
 .form .add-more {}
 
-.form .add-more .btn-add{
+.form .add-more .btn-add {
     width: 45px;
     height: 45px;
     background: #334fe0;
     text-align: center;
     display: block;
-    margin:  20px auto;
+    margin: 20px auto;
     color: #fff;
     border-radius: 50%;
     line-height: 45px;
@@ -1138,15 +1098,19 @@ body {
     background-color: #fff !important;
     color: rgb(51, 79, 224) !important;
 }
-.form .preview-btn{
+
+.form .preview-btn {
     display: none;
 }
+
 .form .buttons {
     height: 115px;
 }
-.form .buttons .btn{
+
+.form .buttons .btn {
     height: 45px;
 }
+
 @media (max-width:1500px) {
     .collapse-item .trashAndMove {
         left: auto;
@@ -1157,13 +1121,15 @@ body {
 
 @media (max-width:1300px) {
 
-    body{
+    body {
         background: #fff;
     }
+
     .mutistep-form .form {
         width: 100%;
         padding-bottom: 10px;
     }
+
     .mutistep-form .preview {
         position: absolute;
         width: 100%;
@@ -1173,24 +1139,18 @@ body {
         top: 0;
         left: 0;
     }
-    .mutistep-form .preview>div{
-/*        transform: scale(.5);
-        max-width: 90vw;
-        opacity: 0;
-        transition: .3s;
-    }
-    .mutistep-form .preview.active> div{
-/*        transform: translate(-50%,-50%) scale(1);*/
+
+    .mutistep-form .preview > div {
         opacity: 1;
     }
-    .mutistep-form .preview .swiper-container {
-        width: 60.23vh;
-        max-width: 90vw;
-    }
+
+    
+
     .mutistep-form .preview.active {
         z-index: 99999;
     }
-    .form .preview-btn{
+
+    .form .preview-btn {
         width: 45px;
         height: 45px;
         background: #334fe0;
@@ -1374,6 +1334,7 @@ body {
     .form .steps .personal-details .collapse-button {
         padding: 0;
     }
+
     .mutistep-form .preview .swiper-container {
         max-width: 100vw;
         max-height: 85vh;
