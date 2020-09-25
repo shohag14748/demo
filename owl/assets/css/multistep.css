@@ -504,6 +504,87 @@ body {
     background-position: center right 15px;
 }
 
+.select2-container {
+    display: block;
+}
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+     border: 0; 
+    border-radius: 00px;
+    
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    background-color: #f4f5f9;
+    display: block;
+    padding: 12.5px 20px !important;
+    border-radius: 50px !important;
+}
+.select2-container .select2-selection--single {
+     height: 45px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #2e3d62 !important;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #2e3d62;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    display: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 45px;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    width: 26px;
+    background-image: url(../images/chevron-down-solid.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow *{
+    display: none;
+}
+
+.select2-dropdown {
+    background-color: white;
+    border: none;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 24px 0px rgba(46, 61, 98, 0.2);
+    padding: 12px 0;
+}
+.select2-dropdown.select2-dropdown--above {
+    margin-top: -10px;
+    
+}
+.select2-dropdown.select2-dropdown--below {
+    margin-top: 10px;
+    
+}
+.select2-results__option {
+    padding: 4px 15px;
+    font-size: 13px;
+    color: #2e3d62;
+}
+.select2-results__option:hover {
+    background: #f4f5f9;
+    color: #334fe0;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: #f4f5f9;
+    color: #334fe0;
+}
+.select2-container--default .select2-results__option--selected {
+    background: #fff;
+    color: #334fe0;
+}
+
+
+
+
 .form .steps .personal-details .col-6 input::placeholder {
     color: #2e3d62;
 }
@@ -590,6 +671,7 @@ body {
     align-items: center;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 .collapse-item .trashAndMove {
@@ -1092,7 +1174,7 @@ body {
         left: 0;
     }
     .mutistep-form .preview>div{
-/*        transform: scale(.5);*/
+/*        transform: scale(.5);
         max-width: 90vw;
         opacity: 0;
         transition: .3s;

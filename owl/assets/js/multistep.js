@@ -67,10 +67,27 @@ $(document).ready(function () {
             $(this).toggleClass('collapsed');
         }
     });
-    $('.collapse-item .collapse-button').on('click', function(){
+    $('.collapse-item>.collapse-button').on('click', function(){
+        if(!$(this).hasClass('collapsed')){
+            $(this).siblings('.collapse-area').slideUp();
+            $(this).addClass('collapsed');
+            $(this).siblings('.collapse-area').children('.collapse-sub-item').children('.collapse-button').addClass('collapsed').siblings('.collapse-area').slideUp();
+        }else{
+            $('.collapse-item>.collapse-button').siblings('.collapse-area').slideUp();
+            $('.collapse-item>.collapse-button').addClass('collapsed');
+            $(this).siblings('.collapse-area').slideDown();
+            $(this).removeClass('collapsed');
+            $('.collapse-item>.collapse-button').siblings('.collapse-area').children('.collapse-sub-item').children('.collapse-button').addClass('collapsed').siblings('.collapse-area').slideUp();
+        }
+    })
+    $('.collapse-sub-item>.collapse-button').on('click', function(){
         $(this).siblings('.collapse-area').slideToggle();
         $(this).toggleClass('collapsed');
+        $(this).parent('.collapse-sub-item').siblings().children('.collapse-button').addClass('collapsed').siblings('.collapse-area').slideUp();
     })
+    
+    
+    
         
     $('.swiper-pagination').prepend('Seite ');
     $('.editor').each(function(){
@@ -102,6 +119,11 @@ $(document).ready(function () {
         if ($('.popup .tips:last-child').index() != $('.popup .tips.active').index()){
             $('.popup .tips.active').removeClass('active').next().addClass('active');
         }
+    });
+    $('select').select2({
+        minimumResultsForSearch: Infinity,
+        placeholder: "Land",
+        allowClear: true,
     });
     
 });

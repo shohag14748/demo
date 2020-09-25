@@ -103,5 +103,8 @@ $(document).ready(function () {
             $('.popup .tips.active').removeClass('active').next().addClass('active');
         }
     });
-    
+    $('.js-example-basic-single').select2({
+      placeholder: 'Select an option',
+    minimumResultsForSearch: Infinity
+    });
 });
